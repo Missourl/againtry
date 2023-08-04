@@ -1,0 +1,205 @@
+2023-06-18 19:23:05,703	INFO trainable.py:173 -- Trainable.setup took 26.593 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2023-06-18 19:23:05,706	WARNING util.py:68 -- Install gputil for GPU system monitoring.
+i 0
+Iter: 0; avg. reward=34.4
+i 1
+2023-06-18 19:40:18,900	ERROR actor.py:1175 -- Worker exits with an exit code None.
+ Traceback (most recent call last):
+  File "python\ray\_raylet.pyx", line 1695, in ray._raylet.execute_task_with_cancellation_handler
+  File "python\ray\_raylet.pyx", line 1380, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1431, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1434, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1438, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1378, in ray._raylet.execute_task.function_executor
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\function_manager.py", line 724, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 176, in apply
+    return func(self, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 86, in <lambda>
+    lambda w: w.sample(), local_worker=False, healthy_only=True
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\rollout_worker.py", line 915, in sample
+    batches = [self.input_reader.next()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 92, in next
+    batches = [self.get_data()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 277, in get_data
+    item = next(self._env_runner)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 323, in run
+    outputs = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 379, in step
+    self._base_env.send_actions(actions_to_send)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 464, in send_actions
+    ) = self.vector_env.vector_step(action_vector)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 353, in vector_step
+    results = self.envs[i].step(actions[i])
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\envext3_R.py", line 178, in step
+    wandb.init()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1173, in init
+    raise e
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1146, in init
+    wi.setup(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 317, in setup
+    self._log_setup(settings)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 506, in _log_setup
+    self._wl._early_logger_flush(logger)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 172, in _early_logger_flush
+    self._early_logger._flush()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 76, in _flush
+    logger.log(level, msg, *args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1512, in log
+    self._log(level, msg, args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1589, in _log
+    self.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 952, in handle
+    self.emit(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1087, in emit
+    self.flush()
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1067, in flush
+    self.stream.flush()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "python\ray\_raylet.pyx", line 1796, in ray._raylet.task_execution_handler
+  File "python\ray\_raylet.pyx", line 1725, in ray._raylet.execute_task_with_cancellation_handler
+AttributeError: 'ray._raylet.CoreWorker' object has no attribute 'actors'
+An unexpected internal error occurred while the worker was executing a task.
+Traceback (most recent call last):
+  File "python\ray\_raylet.pyx", line 1695, in ray._raylet.execute_task_with_cancellation_handler
+  File "python\ray\_raylet.pyx", line 1380, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1431, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1434, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1438, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1378, in ray._raylet.execute_task.function_executor
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\function_manager.py", line 724, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 176, in apply
+    return func(self, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 86, in <lambda>
+    lambda w: w.sample(), local_worker=False, healthy_only=True
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\rollout_worker.py", line 915, in sample
+    batches = [self.input_reader.next()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 92, in next
+    batches = [self.get_data()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 277, in get_data
+    item = next(self._env_runner)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 323, in run
+    outputs = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 379, in step
+    self._base_env.send_actions(actions_to_send)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 464, in send_actions
+    ) = self.vector_env.vector_step(action_vector)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 353, in vector_step
+    results = self.envs[i].step(actions[i])
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\envext3_R.py", line 178, in step
+    wandb.init()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1173, in init
+    raise e
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1146, in init
+    wi.setup(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 317, in setup
+    self._log_setup(settings)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 506, in _log_setup
+    self._wl._early_logger_flush(logger)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 172, in _early_logger_flush
+    self._early_logger._flush()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 76, in _flush
+    logger.log(level, msg, *args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1512, in log
+    self._log(level, msg, args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1589, in _log
+    self.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 952, in handle
+    self.emit(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1087, in emit
+    self.flush()
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1067, in flush
+    self.stream.flush()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "python\ray\_raylet.pyx", line 1796, in ray._raylet.task_execution_handler
+  File "python\ray\_raylet.pyx", line 1725, in ray._raylet.execute_task_with_cancellation_handler
+AttributeError: 'ray._raylet.CoreWorker' object has no attribute 'actors'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "python\ray\_raylet.pyx", line 1838, in ray._raylet.task_execution_handler
+SystemExit
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\test_ray_3_R.py", line 70, in <module>
+    results = algo.train()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 389, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 386, in train
+    result = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 803, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 2853, in _run_one_training_iteration
+    results = self.training_step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\ppo\ppo.py", line 403, in training_step
+    train_batch = synchronous_parallel_sample(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 85, in synchronous_parallel_sample
+    sample_batches = worker_set.foreach_worker(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\worker_set.py", line 713, in foreach_worker
+    remote_results = self.__worker_manager.foreach_actor(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 599, in foreach_actor
+    _, remote_results = self.__fetch_result(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 467, in __fetch_result
+    ready, _ = ray.wait(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\auto_init_hook.py", line 18, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\worker.py", line 2737, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python\ray\_raylet.pyx", line 2760, in ray._raylet.CoreWorker.wait
+  File "python\ray\_raylet.pyx", line 452, in ray._raylet.check_status
+ValueError: An application is trying to access a Ray object whose owner is unknown(8849b62d89cb30f9b3cca0b6b901cf9777cd509b0100000001000000 ). Please make sure that all Ray objects you are trying to access are part of the current Ray session. Note that object IDs generated randomly (ObjectID.from_random()) or out-of-band (ObjectID.from_binary(...)) cannot be passed as a task argument because Ray does not know which task created them. If this was not how your object ID was generated, please file an issue at https://github.com/ray-project/ray/issues/
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\test_ray_3_R.py", line 70, in <module>
+    results = algo.train()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 389, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 386, in train
+    result = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 803, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 2853, in _run_one_training_iteration
+    results = self.training_step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\ppo\ppo.py", line 403, in training_step
+    train_batch = synchronous_parallel_sample(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 85, in synchronous_parallel_sample
+    sample_batches = worker_set.foreach_worker(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\worker_set.py", line 713, in foreach_worker
+    remote_results = self.__worker_manager.foreach_actor(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 599, in foreach_actor
+    _, remote_results = self.__fetch_result(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 467, in __fetch_result
+    ready, _ = ray.wait(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\auto_init_hook.py", line 18, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\worker.py", line 2737, in wait
+    ready_ids, remaining_ids = worker.core_worker.wait(
+  File "python\ray\_raylet.pyx", line 2760, in ray._raylet.CoreWorker.wait
+  File "python\ray\_raylet.pyx", line 452, in ray._raylet.check_status
+ValueError: An application is trying to access a Ray object whose owner is unknown(8849b62d89cb30f9b3cca0b6b901cf9777cd509b0100000001000000 ). Please make sure that all Ray objects you are trying to access are part of the current Ray session. Note that object IDs generated randomly (ObjectID.from_random()) or out-of-band (ObjectID.from_binary(...)) cannot be passed as a task argument because Ray does not know which task created them. If this was not how your object ID was generated, please file an issue at https://github.com/ray-project/ray/issues/

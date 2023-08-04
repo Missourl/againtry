@@ -1,0 +1,36 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.5",
+    "heartbeatAt": "2023-06-20T07:11:21.253667",
+    "startedAt": "2023-06-20T07:11:20.003567",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:/Users/Roumaissa/Desktop/Thesis/againtry/test_ray_3_R.py",
+    "codePath": "test_ray_3_R.py",
+    "host": "DESKTOP-FKIJTK0",
+    "username": "Roumaissa",
+    "executable": "C:\\Users\\Roumaissa\\Desktop\\Thesis\\againtry\\venv\\Scripts\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1801.0,
+        "min": 0.0,
+        "max": 1801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1801.0,
+            "min": 0.0,
+            "max": 1801.0
+        }
+    ],
+    "disk": {
+        "total": 237.15038681030273,
+        "used": 195.43782424926758
+    },
+    "memory": {
+        "total": 7.813255310058594
+    }
+}

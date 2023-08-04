@@ -1,0 +1,6 @@
+
+do the average running n=10
+try raypath=11111
+try without reward=reward*mean
+siehe how to plot in linux
+get a variable for compleed task

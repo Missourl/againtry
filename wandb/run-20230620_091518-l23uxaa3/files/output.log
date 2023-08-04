@@ -1,0 +1,115 @@
+2023-06-20 09:15:36,809	INFO trainable.py:173 -- Trainable.setup took 29.816 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2023-06-20 09:15:36,815	WARNING util.py:68 -- Install gputil for GPU system monitoring.
+i 0
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1146, in init
+    wi.setup(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 303, in setup
+    settings._apply_init(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1745, in _apply_init
+    self.update(init_settings, source=Source.INIT)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1421, in update
+    raise KeyError(f"Unknown settings: {unknown_properties}")
+KeyError: "Unknown settings: ['__pydevd_ret_val_dict']"
+2023-06-20 09:27:58,750	ERROR actor_manager.py:507 -- Ray error, taking actor 1 out of service. [36mray::RolloutWorker.apply()[39m (pid=10148, ip=127.0.0.1, actor_id=9d9fe15c2acc8b6dc37bacf801000000, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x000000005ADC7CA0>)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 303, in setup
+    settings._apply_init(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1745, in _apply_init
+    self.update(init_settings, source=Source.INIT)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1421, in update
+    raise KeyError(f"Unknown settings: {unknown_properties}")
+KeyError: "Unknown settings: ['__pydevd_ret_val_dict']"
+The above exception was the direct cause of the following exception:
+[36mray::RolloutWorker.apply()[39m (pid=10148, ip=127.0.0.1, actor_id=9d9fe15c2acc8b6dc37bacf801000000, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x000000005ADC7CA0>)
+  File "python\ray\_raylet.pyx", line 1431, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1510, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1434, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1438, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1378, in ray._raylet.execute_task.function_executor
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\function_manager.py", line 724, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 185, in apply
+    raise e
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 176, in apply
+    return func(self, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 86, in <lambda>
+    lambda w: w.sample(), local_worker=False, healthy_only=True
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\rollout_worker.py", line 915, in sample
+    batches = [self.input_reader.next()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 92, in next
+    batches = [self.get_data()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 277, in get_data
+    item = next(self._env_runner)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 323, in run
+    outputs = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 379, in step
+    self._base_env.send_actions(actions_to_send)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 464, in send_actions
+    ) = self.vector_env.vector_step(action_vector)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 360, in vector_step
+    raise e
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\env\vector_env.py", line 353, in vector_step
+    results = self.envs[i].step(actions[i])
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\envext3_R.py", line 181, in step
+    wandb.init()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1188, in init
+    raise Error("An unexpected error occurred") from error_seen
+wandb.errors.Error: An unexpected error occurred
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 389, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\tune\trainable\trainable.py", line 386, in train
+    result = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 803, in step
+    results, train_iter_ctx = self._run_one_training_iteration()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\algorithm.py", line 2853, in _run_one_training_iteration
+    results = self.training_step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\algorithms\ppo\ppo.py", line 403, in training_step
+    train_batch = synchronous_parallel_sample(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 85, in synchronous_parallel_sample
+    sample_batches = worker_set.foreach_worker(
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\worker_set.py", line 722, in foreach_worker
+    handle_remote_call_result_errors(remote_results, self._ignore_worker_failures)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\worker_set.py", line 75, in handle_remote_call_result_errors
+    raise r.get()
+ray.exceptions.RayTaskError(Error): [36mray::RolloutWorker.apply()[39m (pid=10148, ip=127.0.0.1, actor_id=9d9fe15c2acc8b6dc37bacf801000000, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x000000005ADC7CA0>)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 303, in setup
+    settings._apply_init(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1745, in _apply_init
+    self.update(init_settings, source=Source.INIT)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_settings.py", line 1421, in update
+    raise KeyError(f"Unknown settings: {unknown_properties}")
+KeyError: "Unknown settings: ['__pydevd_ret_val_dict']"
+The above exception was the direct cause of the following exception:
+[36mray::RolloutWorker.apply()[39m (pid=10148, ip=127.0.0.1, actor_id=9d9fe15c2acc8b6dc37bacf801000000, repr=<ray.rllib.evaluation.rollout_worker._modify_class.<locals>.Class object at 0x000000005ADC7CA0>)
+  File "python\ray\_raylet.pyx", line 1431, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1510, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1434, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1438, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1378, in ray._raylet.execute_task.function_executor
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\_private\function_manager.py", line 724, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 185, in apply
+    raise e
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\utils\actor_manager.py", line 176, in apply
+    return func(self, *args, **kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\execution\rollout_ops.py", line 86, in <lambda>
+    lambda w: w.sample(), local_worker=False, healthy_only=True
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\util\tracing\tracing_helper.py", line 464, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\rollout_worker.py", line 915, in sample
+    batches = [self.input_reader.next()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 92, in next
+    batches = [self.get_data()]
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\sampler.py", line 277, in get_data
+    item = next(self._env_runner)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 323, in run
+    outputs = self.step()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\ray\rllib\evaluation\env_runner_v2.py", line 379, in step
+    self._base_env.send_actions(actions_to_send)

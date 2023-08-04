@@ -1,0 +1,34 @@
+2023-06-18 19:40:17,409 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:40:17,565 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:40:17,778 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:40:17,925 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:40:18,195 WARNING MainThread:6956 [wandb_init.py:init():1172] interrupted
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1146, in init
+    wi.setup(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 317, in setup
+    self._log_setup(settings)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 506, in _log_setup
+    self._wl._early_logger_flush(logger)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 172, in _early_logger_flush
+    self._early_logger._flush()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 76, in _flush
+    logger.log(level, msg, *args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1512, in log
+    self._log(level, msg, args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1589, in _log
+    self.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 952, in handle
+    self.emit(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1087, in emit
+    self.flush()
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1067, in flush
+    self.stream.flush()
+KeyboardInterrupt
+2023-06-18 19:40:26,378 WARNING MsgRouterThr:6956 [router.py:message_loop():77] message_loop has been closed

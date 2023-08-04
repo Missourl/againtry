@@ -1,0 +1,86 @@
+2023-06-18 19:39:48,550 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:39:48,733 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:39:48,924 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:39:49,015 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:39:49,130 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-18 19:39:49,255 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-18 19:39:49,431 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'test_ray_3_R.py', 'program': 'C:\\Users\\Roumaissa\\Desktop\\Thesis\\againtry\\test_ray_3_R.py'}
+2023-06-18 19:39:49,555 INFO    MainThread:6956 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193948-nc2ajm8p\logs\debug.log
+2023-06-18 19:39:49,676 INFO    MainThread:6956 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193948-nc2ajm8p\logs\debug-internal.log
+2023-06-18 19:39:53,685 INFO    MainThread:6956 [wandb_init.py:init():547] calling init triggers
+2023-06-18 19:39:53,942 INFO    MainThread:6956 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-18 19:39:54,036 INFO    MainThread:6956 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-18 19:39:54,203 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:39:54,272 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:39:55,358 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:39:55,789 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:39:56,550 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-18 19:39:56,775 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-18 19:39:56,886 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'test_ray_3_R.py', 'program': 'C:\\Users\\Roumaissa\\Desktop\\Thesis\\againtry\\test_ray_3_R.py'}
+2023-06-18 19:39:57,005 INFO    MainThread:6956 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193954-qo3b7s77\logs\debug.log
+2023-06-18 19:39:57,094 INFO    MainThread:6956 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193954-qo3b7s77\logs\debug-internal.log
+2023-06-18 19:39:57,862 INFO    MainThread:6956 [wandb_init.py:init():547] calling init triggers
+2023-06-18 19:39:58,191 INFO    MainThread:6956 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-18 19:39:58,355 INFO    MainThread:6956 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-18 19:39:58,618 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:39:59,215 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:39:59,476 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:39:59,617 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:39:59,742 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-18 19:39:59,877 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-18 19:39:59,974 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'test_ray_3_R.py', 'program': 'C:\\Users\\Roumaissa\\Desktop\\Thesis\\againtry\\test_ray_3_R.py'}
+2023-06-18 19:40:01,298 INFO    MainThread:6956 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193958-trcdff0i\logs\debug.log
+2023-06-18 19:40:02,485 INFO    MainThread:6956 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_193958-trcdff0i\logs\debug-internal.log
+2023-06-18 19:40:02,867 INFO    MainThread:6956 [wandb_init.py:init():547] calling init triggers
+2023-06-18 19:40:03,064 INFO    MainThread:6956 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-18 19:40:15,560 INFO    MainThread:6956 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-18 19:40:15,740 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:40:15,833 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:40:15,916 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:40:16,005 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:40:16,106 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-18 19:40:16,200 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-18 19:40:16,302 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'test_ray_3_R.py', 'program': 'C:\\Users\\Roumaissa\\Desktop\\Thesis\\againtry\\test_ray_3_R.py'}
+2023-06-18 19:40:16,413 INFO    MainThread:6956 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_194015-judkd54f\logs\debug.log
+2023-06-18 19:40:16,496 INFO    MainThread:6956 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\run-20230618_194015-judkd54f\logs\debug-internal.log
+2023-06-18 19:40:16,650 INFO    MainThread:6956 [wandb_init.py:init():547] calling init triggers
+2023-06-18 19:40:16,817 INFO    MainThread:6956 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-18 19:40:17,023 INFO    MainThread:6956 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-06-18 19:40:17,409 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-18 19:40:17,565 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Configure stats pid to 6956
+2023-06-18 19:40:17,778 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\.config\wandb\settings
+2023-06-18 19:40:17,925 INFO    MainThread:6956 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Roumaissa\Desktop\Thesis\againtry\wandb\settings
+2023-06-18 19:40:18,195 WARNING MainThread:6956 [wandb_init.py:init():1172] interrupted
+Traceback (most recent call last):
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1146, in init
+    wi.setup(kwargs)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 317, in setup
+    self._log_setup(settings)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 506, in _log_setup
+    self._wl._early_logger_flush(logger)
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 172, in _early_logger_flush
+    self._early_logger._flush()
+  File "C:\Users\Roumaissa\Desktop\Thesis\againtry\venv\lib\site-packages\wandb\sdk\wandb_setup.py", line 76, in _flush
+    logger.log(level, msg, *args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1512, in log
+    self._log(level, msg, args, **kwargs)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1589, in _log
+    self.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 952, in handle
+    self.emit(record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1187, in emit
+    StreamHandler.emit(self, record)
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1087, in emit
+    self.flush()
+  File "C:\Users\Roumaissa\AppData\Local\Programs\Python\Python39\lib\logging\__init__.py", line 1067, in flush
+    self.stream.flush()
+KeyboardInterrupt
+2023-06-18 19:40:26,378 WARNING MsgRouterThr:6956 [router.py:message_loop():77] message_loop has been closed
